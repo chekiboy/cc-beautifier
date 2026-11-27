@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc-beautifier",
+  "description": "Tidies Claude Code's transcript",
+  "owner": { "name": "Robert Kovács" },
+  "plugins": [
+    {
+      "name": "cc-beautifier",
+      "source": "./",
+      "description": "Folds every tool call row into a box named by its tool, marks your prompts and Claude's replies with a coloured bar, and can show when each message came"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "cc-beautifier",
+  "version": "0.1.0",
+  "description": "Tidies Claude Code's transcript: folds every tool call row into a box named by its tool, with a copy-all button, marks your prompts and Claude's replies with a coloured bar, and can show when each message came",
+  "author": { "name": "Robert Kovács" },
+  "license": "Apache-2.0",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "fold": {
+      "type": "boolean",
+      "title": "Fold tool messages",
+      "description": "Fold every tool call row into a box that opens on a click",
+      "default": true
+    },
+    "time": {
+      "type": "boolean",
+      "title": "Show message time",
+      "description": "Show the time of each prompt, reply and tool call at the end of its row",
+      "default": false
+    },
+    "highlight": {
+      "type": "boolean",
+      "title": "Highlight conversation",
+      "description": "Mark your own prompts and Claude's replies to you with a coloured bar on their left",
+      "default": true
+    }
+  }
+}
